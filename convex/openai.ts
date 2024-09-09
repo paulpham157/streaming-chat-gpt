@@ -14,7 +14,7 @@ export const chat = internalAction({
 
     try {
       const stream = await openai.chat.completions.create({
-        model: "gpt-3.5-turbo", // "gpt-4" also works, but is so slow!
+        model: "gpt-4o-mini",
         stream: true,
         messages: [
           {
